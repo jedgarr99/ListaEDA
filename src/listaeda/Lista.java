@@ -116,6 +116,23 @@ public class Lista <T> {
              permuta(resto, p+s2);
          }
      }
+     public void permutaR(String palabra){
+
+         permutaR(palabra,"",0,palabra.length());
+     }
+     private void permutaR(String s1,String s2, int n,int k){
+         if(s1.length()==0){
+             System.out.println(s2);
+         }
+         
+             if(n<k){
+                 char p=s1.charAt(n);
+                 String resto= s1.substring(0, n)+s1.substring(n+1);
+                 
+                 permutaR(resto, p+s2,n+1,k);
+             }
+     }
+    
  
              
 
