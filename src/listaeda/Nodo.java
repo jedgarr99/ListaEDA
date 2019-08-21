@@ -38,6 +38,7 @@ public class Nodo<T> {
         this.sig = sig;
         //hola 
     }
+    @Override
     public String toString(){
         return dato.toString();
     }
