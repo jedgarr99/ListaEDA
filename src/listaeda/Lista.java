@@ -132,7 +132,17 @@ public class Lista <T> {
                  permutaR(resto, p+s2,n+1,k);
              }
      }
-    
+    public static void main(String[] args) {
+        String a="123";
+
+        Lista b= new Lista();
+       b.permuta(a,"");
+
+
+        
+         
+       
+    }
  
              
 
